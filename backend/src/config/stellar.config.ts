@@ -15,4 +15,9 @@ export default registerAs("stellar", () => ({
     "GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN",
   usdcAssetCode: process.env.USDC_ASSET_CODE || "USDC",
   memoPrefix: process.env.MEMO_PREFIX || "invoisio-",
+  // Soroban contract integration
+  sorobanRpcUrl:
+    process.env.SOROBAN_RPC_URL || "https://soroban-testnet.stellar.org",
+  contractId: process.env.SOROBAN_CONTRACT_ID || "",
+  adminSecretKey: process.env.ADMIN_SECRET_KEY || "",
 }));
